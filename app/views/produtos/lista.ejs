@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <table border="1px">
+            <tr>
+                <td>id</td>
+                <td>Frase em Inglês</td>
+                <td>Frase em Português</td>
+                <td>UserId</td>
+            </tr>
+            <tr>
+                <% for(var i=0; i<lista.length; i++) {%>
+                    <tr>
+                        <td><%= lista[i].id %></td>
+                        <td><%= lista[i].frase_ingles %></td>
+                        <td><%= lista[i].frase_portugues %></td>
+                        <td><%= lista[i].user_id%></td>
+                    </tr>
+                <% } %>
+            </tr>
+        </table>
+    </body>
+</html>
